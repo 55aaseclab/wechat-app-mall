@@ -253,11 +253,11 @@
   <view class="function-section">
     <view class="section-title">常用功能</view>
     <view class="function-grid">
-      <navigator url="/marketing/listing/index" class="function-item">
+      <navigator wx:if="{{false}}" url="/marketing/listing/index" class="function-item">
         <text class="function-icon">🎪</text>
         <view class="function-label">接龙</view>
       </navigator>
-      <navigator url="/pages/qingdan/index" class="function-item">
+      <navigator wx:if="{{false}}" url="/pages/qingdan/index" class="function-item">
         <text class="function-icon">📒</text>
         <view class="function-label">全能清单</view>
       </navigator>
