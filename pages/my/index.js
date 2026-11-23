@@ -254,11 +254,13 @@ Page({
   },
   customerService() {
     wx.openCustomerServiceChat({
-      extInfo: {url: wx.getStorageSync('customerServiceChatUrl')},
+      extInfo: { url: wx.getStorageSync('customerServiceChatUrl') },
       corpId: wx.getStorageSync('customerServiceChatCorpId'),
-      success: res => {},
-      fail: err => {
-        console.error(err)
+      showMessageCard: true,
+      success(res) {},
+      fail(err) {
+        console.error('企业微信客服打开失败', err)
+        wx.showToast({ title: '客服暂不可用', icon: 'none' })
       }
     })
   },

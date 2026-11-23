@@ -367,6 +367,10 @@
       <view class="menu-label">联系客服</view>
       <text class="arrow">›</text>
     </view>
+    <button wx:else class="menu-item" open-type="contact">
+      <view class="menu-label">联系客服</view>
+      <text class="arrow">›</text>
+    </button>
     <navigator url="/pages/my/setting" class="menu-item">
       <view class="menu-label">系统设置</view>
       <text class="arrow">›</text>
