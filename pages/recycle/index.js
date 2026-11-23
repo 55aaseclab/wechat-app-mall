@@ -1,5 +1,4 @@
 const WXAPI = require('apifm-wxapi')
-const AUTH = require('../../utils/auth')
 
 Page({
   data: {
@@ -16,20 +15,7 @@ Page({
       orderId: e.orderId,
       platform: e.platform
     })
-
-    wx.getLocation({
-      type: 'gcj02', // 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
-      success: res => {
-        this.data.latitude = res.latitude
-        this.data.longitude = res.longitude
-        this.initData()
-      },
-      fail: err => {
-        console.error(err)
-        this.initData()
-        AUTH.checkAndAuthorize('scope.userLocation')
-      }
-    })
+    this.initData()
   },
   onShow() {
 

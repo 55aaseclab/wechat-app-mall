@@ -16,7 +16,7 @@
           <image class="shop-icon" src="/images/icon/{{ index == 0?'shop-on':'shop' }}.svg"></image>
           <text class="shop-name {{ index == 0 ? 'shop-name-active' : '' }}">{{ item.name }}</text>
         </view>
-        <view class="distance-wrapper {{ index == 0 ? 'distance-active' : '' }}">
+        <view wx:if="{{item.distance !== undefined && item.distance !== null}}" class="distance-wrapper {{ index == 0 ? 'distance-active' : '' }}">
           <text class="distance-num">{{ item.distance }}</text>
           <text class="distance-unit">km</text>
         </view>
