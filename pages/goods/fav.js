@@ -28,6 +28,11 @@ Page({
   onShow: function () {
     // 每次页面显示时刷新购物车数量（从购物车页返回时也能更新）
     this.refreshCartNum()
+    // 页面从商品详情页返回时，重新读取收藏列表，避免使用旧的空列表
+    if (this.data.loaded && wx.getStorageSync('token')) {
+      this.setData({ page: 1, noMore: false })
+      this.goodsFavList()
+    }
   },
 
   // ==================== 收藏列表 ====================
@@ -39,7 +44,7 @@ Page({
       page: this.data.page,
       pageSize: this.data.pageSize,
     }
-    const res = await WXAPI.goodsFavList(_data)
+    const res = await WXAPI.goodsFavListV2(_data)
     wx.hideLoading()
     if (res.code == 0) {
       const newList = res.data || []
