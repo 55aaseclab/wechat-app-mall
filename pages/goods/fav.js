@@ -47,7 +47,10 @@ Page({
     const res = await WXAPI.goodsFavListV2(_data)
     wx.hideLoading()
     if (res.code == 0) {
-      const newList = res.data || []
+      // V2 接口返回分页对象，商品列表位于 result；兼容旧接口的数组返回格式
+      const newList = Array.isArray(res.data)
+        ? res.data
+        : ((res.data && (res.data.result || res.data.dataList)) || [])
       newList.forEach(ele => {
         if (ele.type == 1 && ele.json) {
           ele.json = JSON.parse(ele.json)
