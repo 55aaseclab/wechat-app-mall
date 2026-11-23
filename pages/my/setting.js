@@ -2,9 +2,6 @@ const CONFIG = require('../../config.js')
 const WXAPI = require('apifm-wxapi')
 const AUTH = require('../../utils/auth')
 Page({
-  data: {
-    enableDebug: wx.getSystemInfoSync().enableDebug
-  },
   onLoad: function (options) {
     this.setData({
       version: CONFIG.version
@@ -38,18 +35,6 @@ Page({
       title: '已清除',
       icon: 'success'
     })
-  },
-  setEnableDebug() {
-    const enableDebug = wx.getSystemInfoSync().enableDebug
-    if (enableDebug) {
-      wx.setEnableDebug({
-        enableDebug: false
-      })
-    } else {
-      wx.setEnableDebug({
-        enableDebug: true
-      })
-    }
   },
   openSetting() {
     wx.openSetting({

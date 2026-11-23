@@ -3,6 +3,12 @@ const CONFIG = require('config.js')
 const AUTH = require('utils/auth')
 App({
   onLaunch: function() {
+    // 正式运行时始终关闭微信调试开关
+    if (wx.setEnableDebug) {
+      wx.setEnableDebug({
+        enableDebug: false
+      })
+    }
     const subDomain = wx.getExtConfigSync().subDomain
     if (subDomain) {
       WXAPI.init(subDomain)

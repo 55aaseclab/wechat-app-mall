@@ -65,19 +65,6 @@
         <text class="item-arrow">›</text>
       </view>
 
-      <view class="setting-item" bindtap="setEnableDebug">
-        <view class="item-left">
-          <view class="item-icon icon-debug">
-            <text class="iconfont">🔧</text>
-          </view>
-          <view class="item-info">
-            <text class="item-title">{{ enableDebug ? '关闭调试模式' : '打开调试模式' }}</text>
-            <text class="item-desc">开发者选项</text>
-          </view>
-        </view>
-        <text class="item-arrow">›</text>
-      </view>
-
       <view class="setting-item" bindtap="openSetting">
         <view class="item-left">
           <view class="item-icon icon-permission">
@@ -148,7 +135,6 @@
   <van-cell title="关于我们" is-link url="/pages/about/index" />
   <van-cell title="意见反馈" is-link url="/pages/my/feedback" />
   <van-cell title="清除缓存" is-link bind:click="clearStorage" />
-  <van-cell title="{{ enableDebug ? '关闭调试模式' : '打开调试模式' }}" is-link bind:click="setEnableDebug" />
   <van-cell title="权限与设置" is-link bind:click="openSetting" />
   <van-cell title="当前版本" value="{{version}}" />
 </view>
