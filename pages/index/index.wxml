@@ -82,8 +82,6 @@ module.exports = {
   </view>
 </view>
 <view class="jd-main-container">
-  <image wx:if="{{ adPositionIndexLivePic }}" class="jd-live-banner" src="{{ adPositionIndexLivePic.val }}" mode="widthFix" bindtap="clickAdPositionIndexLive"></image>
-  
   <!-- 秒杀开始 -->
   <block wx:if="{{miaoshaGoods && miaoshaGoods.length > 0}}">
     <view class="jd-section-header">

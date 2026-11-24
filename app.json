@@ -40,7 +40,6 @@
     "pages/invoice/list",
     "pages/invoice/apply",
     "pages/deposit/pay",
-    "pages/live/index",
     "pages/help/detail",
     "pages/help/index",
     "pages/cms/list",
@@ -94,14 +93,6 @@
       "name": "game",
       "pages": [
         "numberBomb/index"
-      ]
-    },
-    {
-      "root": "packageStreamMedia",
-      "name": "packageStreamMedia",
-      "pages": [
-        "pages/live-client/list",
-        "pages/live-client/client"
       ]
     },
     {

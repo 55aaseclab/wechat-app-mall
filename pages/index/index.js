@@ -431,20 +431,6 @@ Page({
         adPositionIndexPop: res.data
       })
     }
-    res = await WXAPI.adPosition('index-live-pic')
-    if (res.code == 0) {
-      this.setData({
-        adPositionIndexLivePic: res.data
-      })
-    }
-  },
-  clickAdPositionIndexLive() {
-    if (!this.data.adPositionIndexLivePic || !this.data.adPositionIndexLivePic.url) {
-      return
-    }
-    wx.navigateTo({
-      url: this.data.adPositionIndexLivePic.url,
-    })
   },
   closeAdPositionIndexPop() {
     this.setData({

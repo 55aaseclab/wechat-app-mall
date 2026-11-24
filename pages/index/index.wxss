@@ -257,15 +257,6 @@ page {
   padding-bottom: 40rpx;
 }
 
-/* 直播广告横幅 */
-.jd-live-banner {
-  display: block;
-  width: 702rpx;
-  margin: 0 auto 28rpx;
-  border-radius: 16rpx;
-  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
-}
-
 /* ========== 区块标题 ========== */
 .jd-section-header {
   display: flex;
