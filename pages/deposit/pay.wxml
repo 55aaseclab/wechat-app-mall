@@ -52,6 +52,10 @@
         <view class="notice-dot"></view>
         <text class="notice-text">如需退还押金，请<text class="highlight">联系管理员</text>进行退还操作</text>
       </view>
+      <view class="notice-item">
+        <view class="notice-dot"></view>
+        <text class="notice-text">提现手续费按提现金额的 1% 收取</text>
+      </view>
     </view>
   </view>
 

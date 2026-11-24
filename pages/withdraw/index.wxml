@@ -69,6 +69,7 @@
     <view class="tips-content">
       <view class="tips-item">• 提现金额将原路返回至您的账户</view>
       <view class="tips-item">• 每日最多可申请3次提现</view>
+      <view class="tips-item">• 提现手续费按提现金额的 1% 收取</view>
       <view class="tips-item">• 如有疑问请联系客服</view>
     </view>
   </view>

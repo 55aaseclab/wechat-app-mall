@@ -63,6 +63,7 @@
       <view class="tip-item">• 充值金额实时到账，可随时使用</view>
       <view class="tip-item">• 支持微信支付，安全可靠</view>
       <view class="tip-item">• 充值记录可在"我的"页面查看</view>
+      <view class="tip-item">• 提现手续费按提现金额的 1% 收取</view>
     </view>
   </view>
 
