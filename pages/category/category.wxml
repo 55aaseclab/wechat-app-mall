@@ -1,6 +1,4 @@
-<van-search value="{{ name }}" placeholder="请输入搜索关键词" shape="round" bind:search="bindconfirm" use-right-icon-slot>
-  <van-icon slot="right-icon" name="scan" bind:click="searchscan" />
-</van-search>
+<van-search value="{{ name }}" placeholder="请输入搜索关键词" shape="round" bind:search="bindconfirm" />
 <view class="main">
   <!-- categorySecondPos == 1：左侧展开折叠二级分类 -->
   <scroll-view wx:if="{{ categorySecondPos == 1 }}" class="category-container" scroll-y="true" scroll-with-animation="true" scroll-into-view="{{ aaa }}">
