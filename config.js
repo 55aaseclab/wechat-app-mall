@@ -9,5 +9,5 @@ module.exports = {
   openIdAutoRegister: true, // 用户打开小程序的时候自动注册新用户【用户不存在的时候】
   categorySecondPos: 0, // 0 显示在右侧顶部； 1 左侧一级分类展开折叠展示二级分类
   couponUseMultiple: true, // 下单是否允许使用多张优惠券
-  openNickAvatarUrlPOP: true, // 是否检测昵称头像，几秒后弹出完善弹出框
+  openNickAvatarUrlPOP: false, // 是否检测昵称头像，几秒后弹出完善弹出框
 }
